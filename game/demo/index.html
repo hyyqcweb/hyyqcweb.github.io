@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				box-sizing: border-box;
+				-webkit-box-sizing:border-box ;
+			}
+			.clearfix::after{
+				content: "";
+				width: 0;
+				height: 0;
+				clear: both;
+				font-size: 0;
+				display: block;
+			}
+			.gameContainer{
+				width: 602px;
+				height: 602px;
+				margin: auto;
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				border: 1px solid #000;
+			}
+			.gameContainer div{
+				float: left;
+				border: 1px solid rgba(255,255,255,.8);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="gameContainer clearfix">
+			
+		</div>
+		<div class="scoreInfo">
+			
+		</div>
+		<script type="text/javascript">
+			var oGameContainer=document.getElementsByClassName("gameContainer")[0];
+			var oGameScore=document.getElementsByClassName("scoreInfo")[0];
+			var numGameLevel=1;//关数
+			var numGameWidth=600;
+			var numGameHeight=600;
+			var numScore=0;//成绩
+			
+			init(numGameLevel);
+			function init(level){
+				//生成一个时间A
+				
+				oGameContainer.innerHTML="";
+				//多少个小框
+				var numBox=(level+1)*(level+1);
+				//小框的宽度和高
+				var widthBox=600/(level+1);
+				//随机颜色，numRed,numGreen,numBlue分别代表红绿蓝的随机数
+				//color就是生成的随机颜色，colorSpecial就是特殊的随机颜色
+				var numRed=parseInt(Math.random()*255);
+				var nunGreen=parseInt(Math.random()*255);
+				var numBlue=parseInt(Math.random()*255);
+				var color="rgba("+numRed+","+nunGreen+","+numBlue+",1)";
+				var colorSpecial="rgba("+numRed+","+nunGreen+","+numBlue+",0.9)";
+				//特殊的序号，随机的
+				var index=parseInt(Math.random()*numBox);
+				for (var i = 0; i < numBox; i++) {
+					var div = document.createElement("div");
+					div.setAttribute("id", "newDiv");
+					div.style.width=widthBox+"px";
+					div.style.height=widthBox+'px';
+					if(i==index){
+						div.style.background=colorSpecial;
+						div.setAttribute("onclick", "ok()");
+					}else{
+						div.style.background=color;
+					}
+					oGameContainer.appendChild(div);
+				}
+			}
+			function ok(){
+				//生成一个时间B
+				
+//				console.log("ok");
+				numGameLevel++;//关数++
+				numScore+=100;//分数++
+				oGameScore.innerHTML="分数："+numScore;
+				init(numGameLevel);
+			}
+		</script>
+	</body>
+</html>
+
