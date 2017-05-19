@@ -1,0 +1,1039 @@
+    .clearfix::after{
+     content: "";
+     clear:both;
+     display: block;
+     width: 0;
+     height: 0;
+     font-size:0;
+}
+    .header{
+      width: 1100px;
+      margin: 0 auto;
+    }
+    .header .logo img{
+      width: 100px;
+      height: 45px;
+      margin-top: 20px;
+      float: left;
+    }
+    .header .menu{
+      float: right;
+    }
+    .header .menu ul li{
+      float: left;
+      margin-top: 10px;
+      list-style-type: none;
+    }
+    .header .menu ul li a{
+      margin-top: 15px;
+      color:#666;
+      text-decoration: none;
+      border-bottom: 3px solid #fff;
+      font-size:16px;
+      display: inline-block;
+      margin: 0px 20px;
+      padding: 20px 0;
+    }
+    .header .menu ul li a:hover{
+      color:#00a7ea;
+      border-bottom: 3px solid #00a7ea;
+    }
+    .banner{
+/*      float: left;*/
+/*      width: 1920px;*/
+      height: 260px;
+      background: url("http://www.xunlei.com/images/contact_banner.jpg") center no-repeat; 
+    }
+    .content{
+      margin: 0 auto;
+      width: 1100px;
+      position: relative;
+    }
+    .content .title{
+      float: left;
+      color:#333;
+      font-size:24px;
+      margin: 20px 0 20px 0px;
+    }
+    .content .caption{
+      color:#666;
+      position: absolute;
+      top:50px;
+      right: 0px;
+      font-size:13px;
+    }
+    .content .caption a{
+      color:#666;
+      text-decoration: none;
+    }
+    .content .caption a:hover{
+      text-decoration: underline;
+    }
+    .content .contact_us{
+      width: 1100px;
+      margin-left: 0px;
+      padding: 0;
+    }
+    .content .contact_us .contact{
+      float: right;
+      margin: 0;
+      padding: 0;
+    }
+    .content .contact_us .contact ul li{
+      list-style-type: none;
+      color:#666;
+      float: left;
+      width: 35%;
+      min-height: 120px;
+      margin-bottom: 20px;
+      margin-right: -20px;
+    }
+    .content .contact_us .contact ul li dd{
+      margin: 0;
+      padding: 0;
+      font-size:18px;
+      color:#111;
+      margin-bottom: 10px;
+    }
+    .content .contact_us .contact ul li dt{
+      color:#666;
+      margin-bottom:10px;
+    }
+    .content .contact_us .contact ul li a{
+      color:#666;
+      text-decoration: none;
+    }
+    .content .contact_us .contact ul li a:hover{
+      text-decoration: underline;
+    }
+    .content .contact_us .contact .underline{
+      border-bottom:1px solid #e9e9e9;
+      margin-top: 270px;
+    }
+    .content .titles{
+      float: left;
+      color:#333;
+      font-size:24px;
+      margin-top: 30px;
+      margin-left: 0px;
+      margin-bottom: 20px;
+    }
+    .content .company_us{
+      width: 1100px;
+      margin-left: 0px;
+      padding: 0;
+    }
+    .content .company_us .company{
+      float: right;
+      margin: 0;
+      padding: 0;
+    }
+    .content .company_us .company ul li{
+      list-style-type: none;
+      color:#666;
+      float: left;
+      width: 35%;
+      min-height: 120px;
+      font-size:16px;
+    }
+    .content .company_us .company ul li dd{
+      margin: 0;
+      padding: 0;
+      font-size:18px;
+      color:#111;
+      margin-bottom: 10px;
+    }
+    .content .company_us .company ul li dt{
+      color:#666;
+      margin-bottom:10px;
+      font-size:14px;
+    }
+    .content .company_us .company ul li dl{
+      color:#666;
+      font-size:16px;
+    }
+    .footer{
+      background:#f5f5f5;
+      /*width: 100%;*/
+      height: 260px;
+      /*float: left;*/
+      /*margin-left: 100px;*/
+      position: relative;
+      /*margin: 0;
+      padding: 0;*/
+    }
+    .footer .foot{
+      width: 1100px;
+      margin: 0 auto;
+    }
+    .footer .foot .link{
+      font-size: 14px;
+      /*float: right;*/
+      margin-left: -10px;
+      margin-top: 50px;
+    }
+    .footer .foot .link ul li{
+      list-style-type: none;
+      float: left;
+      margin: 15px;
+      margin-top: 80px;
+    }
+    .footer .foot .link ul li a{
+      color:#565656;
+      text-decoration: none;
+    }
+    .footer .foot .link ul li a:hover{
+      text-decoration: underline;
+    }
+    .footer .foot .info{
+      float: left;
+      margin-left: 0px;
+      margin-top: 20px;
+    }
+    .footer .foot .info p{
+      color:#888;
+      font-size: 13px;
+      line-height:20px;
+     }
+    .footer .foot .info p a{
+      color:#666;
+      text-decoration: none;
+      font-size: 13px;
+    }
+    .footer .foot .info p a:hover{
+      text-decoration: underline;
+    }
+    .footer .foot .follow{
+      position: absolute;
+      top:70px;
+      right: 300px;
+    }
+    .footer .foot .follow ul li{
+      list-style-type: none;
+      float: right;
+      position: relative;
+    }
+    .footer .foot .follow ul li a{
+      text-decoration: none;
+      position: absolute;
+      display: block;
+      /*left:1050px;
+      top:20px;*/
+      width: 77px;
+      height: 26px;
+      background-image: url("http://www.xunlei.com/img/ico_footer.png") ;
+      text-indent: -999em;
+    }
+    .footer .foot .follow ul li  a img{
+      display: none;
+    }
+    .footer .foot .follow ul li  a:hover img{
+      display: block;
+    }
+    .footer .foot .follow a:hover .weixing img{
+      position: absolute;
+      top:100%;
+      width: 150px;
+      height: 150px;
+      /*margin-left: -90px;*/
+      left: -50px;
+      display:inline-block;
+
+    }
+     .honor .header{
+      width: 1100px;
+      margin: 0 auto;
+    }
+    .honor .header .logo img{
+      width: 100px;
+      height: 45px;
+      margin-top: 20px;
+      float: left;
+    }
+    .honor .header .menu{
+      float: right;
+    }
+    .honor .header .menu ul li{
+      float: left;
+      margin-top: 10px;
+      list-style-type: none;
+    }
+    .honor .header .menu ul li a{
+      margin-top: 15px;
+      color:#666;
+      text-decoration: none;
+      border-bottom: 3px solid #fff;
+      font-size:16px;
+      display: inline-block;
+      margin: 0px 20px;
+      padding: 20px 0;
+    }
+    .honor .header .menu ul li a:hover{
+      color:#00a7ea;
+      border-bottom: 3px solid #00a7ea;
+    }
+    .honor .banner{
+      /*float: left;*/
+      /*width: 1920px;*/
+      height: 260px;
+      background: url("http://www.xunlei.com/images/brief_banner.jpg") no-repeat center;
+      /*margin: 0 -8px;   */ 
+    }
+    .honor .content{
+      margin: 0 auto;
+      width: 1100px;
+      position: relative;
+    }
+    .honor .content .title{
+      float: left;
+      color:#333;
+      font-size:24px;
+      margin-top: 30px;
+      margin-left: 0px;
+    }
+    .honor .content .caption{
+      color:#666;
+      position: absolute;
+      top:50px;
+      right: 0px;
+      font-size:13px;
+    }
+    .honor .content .caption a{
+      color:#666;
+      text-decoration: none;
+    }
+    .honor .content .caption a:hover{
+      text-decoration: underline;
+    }
+    .honor .content .section{
+      float: left;
+    }
+    .honor .content .section p{
+      text-indent:2em;
+      line-height: 30px;
+      font-size:15px;
+      color:#333;
+      padding-bottom: 20px;
+    }
+    .honor .footer{
+      background:#f5f5f5;
+      /*width: 100%;*/
+      height: 260px;
+      /*float: left;*/
+      /*margin-left: 100px;*/
+      position: relative;
+      /*margin: 0;
+      padding: 0;*/
+    }
+    }
+     .honor .footer .foot{
+      width: 1100px;
+      margin: 0 auto;
+    }
+    .honor .footer .foot .link{
+      font-size: 14px;
+      /*float: right;*/
+      margin-left: -10px;
+      margin-top: 65px;
+    }
+    .honor .footer .foot .link ul li{
+      list-style-type: none;
+      float: left;
+      margin: 15px;
+      margin-top: 80px;
+    }
+    .honor .footer .foot .link ul li a{
+      color:#565656;
+      text-decoration: none;
+    }
+    .honor .footer .foot .link ul li a:hover{
+      text-decoration: underline;
+    }
+    .honor .footer .foot .info{
+      float: left;
+    }
+    .honor .footer .foot .info p{
+      color:#999;
+      font-size: 13px;
+      line-height:23px;
+      margin-left:-5px;
+     }
+    .honor .footer .foot .info p a{
+      color:#666;
+      text-decoration: none;
+      font-size: 13px;
+      line-height:20px;
+    }
+    .honor .footer .foot .info p a:hover{
+      text-decoration: underline;
+    }
+    .honor .footer .foot .follow{
+      position: absolute;
+      top:70px;
+      right: 480px;
+    }
+    .honor .footer .foot .follow ul li{
+      list-style-type: none;
+      float: right;
+      position: relative;
+    }
+    .honor .footer .foot .follow ul li a{
+      text-decoration: none;
+      position: absolute;
+      display: block;
+      /*left:1050px;
+      top:20px;*/
+      width: 77px;
+      height: 26px;
+      background-image: url("http://www.xunlei.com/img/ico_footer.png") ;
+      text-indent: -999em;
+    }
+    .honor .footer .foot .follow ul li  a img{
+      display: none;
+    }
+    .honor .footer .foot .follow ul li  a:hover img{
+      display: block;
+    }
+    .honor .footer .foot .follow a:hover .weixing img{
+      position: absolute;
+      top:100%;
+      width: 150px;
+      height: 150px;
+      /*margin-left: -90px;*/
+      left: -50px;
+      display:inline-block;
+    }
+    .introduction .header{
+      width: 1100px;
+      margin: 0 auto;
+    }
+    .introduction .header .logo img{
+      width: 100px;
+      height: 45px;
+      margin-top: 20px;
+      float: left;
+    }
+    .introduction .header .menu{
+      float: right;
+    }
+    .introduction .header .menu ul li{
+      float: left;
+      margin-top: 10px;
+      list-style-type: none;
+    }
+    .introduction .header .menu ul li a{
+      margin-top: 15px;
+      color:#666;
+      text-decoration: none;
+      border-bottom: 3px solid #fff;
+      font-size:16px;
+      display: inline-block;
+      margin: 0px 20px;
+      padding: 20px 0;
+    }
+    .introduction .header .menu ul li a:hover{
+      color:#00a7ea;
+      border-bottom: 3px solid #00a7ea;
+    }
+    .introduction .banner{
+      /*float: left;
+      width: 1920px;*/
+      height: 260px;
+      background: url("http://www.xunlei.com/images/honor_banner.jpg") center no-repeat;
+      /*margin: 0 -8px;  */  
+    }
+    .introduction .content{
+      margin: 0 auto;
+      width: 1100px;
+      position: relative;
+    }
+    .introduction .content .title{
+      float: left;
+      color:#333;
+      font-size:28px;
+      margin-top: 30px;
+      margin-left: 0px;
+    }
+    .introduction .content .caption{
+      color:#666;
+      position: absolute;
+      top:60px;
+      right: 0px;
+      font-size:13px;
+    }
+    .introduction .content .caption a{
+      color:#666;
+      text-decoration: none;
+    }
+    .introduction .content .caption a:hover{
+      text-decoration: underline;
+    }
+    .introduction .content .section {
+      float: left;
+      color:#333;
+      font-size: 15px;
+      line-height: 30px;
+      padding-bottom: 20px;
+      margin-left: 0px;
+    }
+    .introduction .content .section ul li{
+      float: left;
+      list-style-type: none;
+      width: 33%;
+      height: 50px;
+    }
+    .introduction .footer{
+      /*float: left;*/
+      background: #f5f5f5;
+      /*width: 180%;*/
+      /*margin-left: -450px;*/
+      height: 260px;
+      position: relative;
+    }
+     .introduction .footer .foot{
+      width: 1100px;
+      margin: 0 auto;
+    }
+     .introduction .footer .foot .link{
+      font-size: 14px;
+      /*float: right;*/
+      margin-left: -10px;
+      margin-top: 40px;
+    }
+     .introduction .footer .foot .link ul li{
+      list-style-type: none;
+      float: left;
+      margin: 15px;
+      margin-top: 80px;
+    }
+     .introduction .footer .foot .link ul li a{
+      color:#565656;
+      text-decoration: none;
+    }
+     .introduction .footer .foot .link ul li a:hover{
+      text-decoration: underline;
+    }
+    .honor .footer .foot .info{
+      float: left;
+      margin-left: 6px;
+    }
+     .introduction .footer .foot .info p{
+      color:#999;
+      font-size: 13px;
+      margin-left: 3px;
+      line-height:25px;
+     }
+     .introduction .footer .foot .info p a{
+      color:#666;
+      text-decoration: none;
+      font-size: 13px;
+    }
+     .introduction .footer .foot .info p a:hover{
+      text-decoration: underline;
+    }
+     .introduction .footer .foot .follow{
+      position: absolute;
+      top:70px;
+      right: 480px;
+    }
+     .introduction .footer .foot .follow ul li{
+      list-style-type: none;
+      float: right;
+      position: relative;
+    }
+     .introduction .footer .foot .follow ul li a{
+      text-decoration: none;
+      position: absolute;
+      display: block;
+      /*left:1050px;
+      top:20px;*/
+      width: 77px;
+      height: 26px;
+      background-image: url("http://www.xunlei.com/img/ico_footer.png") ;
+      text-indent: -999em;
+    }
+     .introduction .footer .foot .follow ul li  a img{
+      display: none;
+    }
+     .introduction .footer .foot .follow ul li  a:hover img{
+      display: block;
+    }
+     .introduction .footer .foot .follow a:hover .weixing img{
+      position: absolute;
+      top:100%;
+      width: 150px;
+      height: 150px;
+      /*margin-left: -90px;*/
+      left: -50px;
+      display:inline-block;
+    }
+     .team .header{
+      width: 1100px;
+      margin: 0 auto;
+    }
+    .team .header .logo img{
+      width: 100px;
+      height: 45px;
+      margin-top: 25px;
+      float: left;
+    }
+    .team .header .menu{
+      float: right;
+    }
+    .team .header .menu ul li{
+      float: left;
+      margin-top: 10px;
+      list-style-type: none;
+    }
+    .team .header .menu ul li a{
+      margin-top: 15px;
+      color:#666;
+      text-decoration: none;
+      border-bottom: 3px solid #fff;
+      font-size:16px;
+      display: inline-block;
+      margin: 0px 20px;
+      padding: 20px 0;
+    }
+    .team .header .menu ul li a:hover{
+      color:#00a7ea;
+      border-bottom: 3px solid #00a7ea;
+    }
+    .team .banner{
+      /*float: left;
+      width: 1920px;*/
+      height: 260px;
+      background: url("http://www.xunlei.com/images/manager_banner.jpg") no-repeat center;
+      /*margin: 0 -8px;    */
+    }
+    .team .content{
+      margin: 0 auto;
+      width: 1100px;
+      position: relative;
+    }
+    .team .content .title{
+      float: left;
+      color:#333;
+      font-size:24px;
+      margin-top: 30px;
+      margin-left: 0px;
+      margin-bottom: 20px;
+    }
+    .team .content .caption{
+      color:#666;
+      position: absolute;
+      top:60px;
+      right: 0px;
+      font-size:13px;
+    }
+    .team .content .caption a{
+      color:#666;
+      text-decoration: none;
+    }
+    .team .content .caption a:hover{
+      text-decoration: underline;
+    }
+    .team .content .section{
+      position: relative;
+    }
+    .team .content .section ul li{
+      list-style-type: none;
+      float: left;
+      margin-left: 150px;
+      font-size:14px;
+      color:#666;
+      border-bottom: 1px solid #e9e9e9;
+      margin-top: 40px;
+    }
+    .team .content .section ul li img{
+      float: left;
+      margin-left: -150px;
+      margin-top: 15px;
+      /*width: 200px;
+      height: 150px;*/
+      /*margin-left: 0px;
+      margin-top: -20px;*/
+    }
+    .team .content .section ul li h3{
+      /*float: left;*/
+      /*margin-left: 200px;*/
+      /*top:500px;
+      right: 30px;*/
+      /*margin-top: -200px;*/
+      /*margin-left: -10px;*/
+      line-height:20px;
+      color:#333;
+      font-size:16px;
+      line-height:20px;
+      margin-left: -2px;
+    }
+    .team .content .section ul li p{
+      line-height:25px;
+      padding-bottom: 30px;
+      padding-top: 20px;
+      font-size:18px;
+      
+    }
+      .team .footer{
+      background:#f5f5f5;
+      /*width: 100%;*/
+      height: 260px;
+      /*float: left;*/
+      /*margin-left: 100px;*/
+      position: relative;
+      /*margin: 0;
+      padding: 0;*/
+    }
+    .team .footer .foot{
+      width: 1100px;
+      margin: 0 auto;
+    }
+    .team .footer .foot .link{
+      font-size: 14px;
+      /*float: right;*/
+      margin-left: -10px;
+      margin-top: 50px;
+    }
+    .team .footer .foot .link ul li{
+      list-style-type: none;
+      float: left;
+      margin: 15px;
+      margin-top: 80px;
+    }
+    .team .footer .foot .link ul li a{
+      color:#565656;
+      text-decoration: none;
+    }
+    .team .footer .foot .link ul li a:hover{
+      text-decoration: underline;
+    }
+    .team .footer .foot .info{
+      float: left;
+      margin-left: 0px;
+      margin-top: 20px;
+    }
+    .team .footer .foot .info p{
+      color:#888;
+      font-size: 13px;
+      line-height:20px;
+     }
+    .team .footer .foot .info p a{
+      color:#666;
+      text-decoration: none;
+      font-size: 13px;
+    }
+    .team .footer .foot .info p a:hover{
+      text-decoration: underline;
+    }
+    .team .footer .foot .follow{
+      position: absolute;
+      top:70px;
+      right: 450px;
+    }
+    .team .footer .foot .follow ul li{
+      list-style-type: none;
+      float: right;
+      position: relative;
+    }
+    .team .footer .foot .follow ul li a{
+      text-decoration: none;
+      position: absolute;
+      display: block;
+      /*left:1050px;
+      top:20px;*/
+      width: 77px;
+      height: 26px;
+      background-image: url("http://www.xunlei.com/img/ico_footer.png") ;
+      text-indent: -999em;
+    }
+    .team .footer .foot .follow ul li  a img{
+      display: none;
+    }
+    .team .footer .foot .follow ul li  a:hover img{
+      display: block;
+    }
+    .team .footer .foot .follow a:hover .weixing img{
+      position: absolute;
+      top:100%;
+      width: 150px;
+      height: 150px;
+      /*margin-left: -90px;*/
+      left: -50px;
+      display:inline-block;
+    }
+    .news .header{
+      width: 1100px;
+      margin: 0 auto;
+    }
+    .news .header .logo img{
+      width: 100px;
+      height: 45px;
+      margin-top: 20px;
+      float: left;
+    }
+    .news .header .menu{
+      float: right;
+    }
+    .news .header .menu ul li{
+      float: left;
+      margin-top: 15px;
+      list-style-type: none;
+    }
+    .news .header .menu ul li a{
+      margin-top: 15px;
+      color:#666;
+      text-decoration: none;
+      border-bottom: 3px solid #fff;
+      font-size:16px;
+      display: inline-block;
+      margin: 0px 20px;
+      padding: 20px 0;
+    }
+    .news .header .menu ul li a:hover{
+      color:#00a7ea;
+      border-bottom: 3px solid #00a7ea;
+    }
+    .news .banner{
+/*      float: left;*/
+/*      width: 1920px;*/
+      height: 260px;
+      margin-top: -5px;
+      background: url("http://www.xunlei.com/images/news_banner.jpg") center no-repeat; 
+    }
+    .news .content{
+      margin: 0 auto;
+      width: 1100px;
+      position: relative;
+    }
+    .news .content .title{
+      float: left;
+      color:#333;
+      font-size:24px;
+      margin: 20px 0 30px 0px;
+    }
+    .news .content .caption{
+      color:#666;
+      position: absolute;
+      top:50px;
+      right: 0px;
+      font-size:13px;
+    }
+    .news .content .caption a{
+      color:#666;
+      text-decoration: none;
+    }
+    .news .content .caption a:hover{
+      text-decoration: underline;
+    }
+   /* .news .content .section{
+      width: 1100px;
+      margin: 0 auto;
+    }*/
+    .news .content .section ul{
+      /*padding-bottom: 10px;*/
+      padding-top: 60px;     
+      /*margin-left: 200px;*/
+    }
+    .news .content .section ul li{
+      /*float: left;*/
+      /*padding-top: 30px;*/
+      border-top:1px solid #e9e9e9;
+      position: relative;
+      /*padding: 0px 0 50px;*/
+      margin-top: 30px;
+    }
+    .news .content .section ul li h3{
+      font-size:24px;
+      line-height:44px;
+      margin-left: -3px;
+    }
+    .news .content .section ul li h3 a{
+      color:#333;
+      text-decoration: none;
+    }
+    .news .content .section ul li h3 a:hover{
+      color:#00a7ea;
+      text-decoration: underline;
+    } 
+    .news .content .section ul li p{
+      color:#666;
+      line-height:25px;
+      font-size:15px;
+    }
+    .news .content .section ul li dd{
+      position: absolute;
+      top:80px;
+      right: 0;
+      color:#666;
+    }
+    .news .content .box{
+        /*margin-top: 20px;*/
+        /*position: absolute;
+        top:720px;
+        left:330px;
+        margin: 20px 20px;*/
+        margin-top: 30px;
+        text-align: center;
+        padding-bottom: 25px;
+
+    }
+    .news .content .box a{
+        /*font-size:14px;
+        color:#666;*/
+        margin: 0 15px;
+        /*width: 261px;
+        height: 166px;*/
+        background: url("http://www.xunlei.com/img/btn_spr.png") no-repeat -150px 0;
+        /*margin-left: 200px;*/
+    }
+    /*.news .content .box .first{
+
+    }
+    .news .content .box .border{
+      border: 1px solid #000;
+      width: 60px;
+      height: 30px;
+      position: absolute;
+      top:0px;
+    }*/
+    .news .footer{
+      background:#f5f5f5;
+      /*width: 100%;*/
+      height: 260px;
+      /*float: left;*/
+      /*margin-left: 100px;*/
+      position: relative;
+      /*margin: 0;
+      padding: 0;*/
+    }
+    .news .footer .foot{
+      width: 1100px;
+      margin: 0 auto;
+    }
+    .news .footer .foot .link{
+      font-size: 14px;
+      /*float: right;*/
+      margin-left: -10px;
+      margin-top: 30px;
+    }
+    .news .footer .foot .link ul li{
+      list-style-type: none;
+      float: left;
+      margin: 15px;
+      margin-top: 80px;
+    }
+    .news .footer .foot .link ul li a{
+      color:#565656;
+      text-decoration: none;
+    }
+    .news .footer .foot .link ul li a:hover{
+      text-decoration: underline;
+    }
+    .news .footer .foot .info{
+      float: left;
+      margin-left: 0px;
+      margin-top: 20px;
+    }
+    .news .footer .foot .info p{
+      color:#888;
+      font-size: 13px;
+      line-height:20px;
+     }
+    .news .footer .foot .info p a{
+      color:#666;
+      text-decoration: none;
+      font-size: 13px;
+    }
+    .news .footer .foot .info p a:hover{
+      text-decoration: underline;
+    }
+    .news .footer .foot .follow{
+      position: absolute;
+      top:70px;
+      right: 300px;
+    }
+    .news .footer .foot .follow ul li{
+      list-style-type: none;
+      float: right;
+      position: relative;
+    }
+    .news .footer .foot .follow ul li a{
+      text-decoration: none;
+      position: absolute;
+      display: block;
+      /*left:1050px;
+      top:20px;*/
+      width: 77px;
+      height: 26px;
+      background-image: url("http://www.xunlei.com/img/ico_footer.png") ;
+      text-indent: -999em;
+    }
+    .news .footer .foot .follow ul li  a img{
+      display: none;
+    }
+    .news .footer .foot .follow ul li  a:hover img{
+      display: block;
+    }
+    .news .footer .foot .follow a:hover .weixing img{
+      position: absolute;
+      top:100%;
+      width: 150px;
+      height: 150px;
+      /*margin-left: -90px;*/
+      left: -50px;
+      display:inline-block;
+    }
+    .home .header{
+      position: fixed;
+      z-index: 3;
+    }
+    .home .header .logo{
+      position: absolute;
+      float: left;
+      width: 142px;
+      height: 64px;
+    }
+    .home .header .logo a{
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+    .home .header .logo a img{
+      position: absolute;
+      display: inline-block;
+      width: 142px;
+      height: 64px;
+      left:35px;
+      top:-5px;
+    }
+    .home .header .nav{
+      position: relative;
+    }
+    .home .header .nav .list{
+      position: absolute;
+      right:-350px;
+      top:35px;
+      font-size:20px;
+    }
+    .home .header .nav .menu{
+      position: absolute;
+      right: -450px;
+      top:10px;
+      font-size:20px;
+      border:none;
+
+    }
+    .home .box{
+      position: fixed;
+      width: auto;
+      height:auto;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: 2;
+    }
+    .home .box .bg_box{
+      position: absolute;
+      min-width: 100%;
+      min-height: 100%;
+      background: url("http://www.xunlei.com/img/bg_shoulei.jpg") center center;  
+    }
