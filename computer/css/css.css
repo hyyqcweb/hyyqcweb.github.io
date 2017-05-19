@@ -1,0 +1,285 @@
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+    width: 0;
+    height: 0;
+    font-size: 0;
+}
+.header{
+	width: 1100px;
+	margin: 0 auto;
+	height: 80px;
+	position: relative;
+}
+.header .logo{
+	margin-top: 20px;
+	float: left;
+}
+.header .menu ul{
+    float: left;
+}
+.header .menu ul li{
+	float: left;
+	display: block;
+	margin: 0px 20px;
+	list-style-type: none;
+	
+}
+.header .menu ul li a{
+	text-decoration: none;
+	font-size: 20px;
+	color:#333;
+	/*border-left:2px solid #eee;*/
+	border-right:2px solid #eee;
+/*	border-width: 30px;
+	border-height: 80px;*/
+	/*border-top:2px solid blue;*/
+	line-height: 80px;
+	padding: 0 10px;
+
+}
+.header .menu ul li a:hover{
+     color:blue;
+	}
+.header .iphone{
+		overflow:hidden;
+		width: 300px;
+		height: 50px;
+		float: right;
+		margin-top: 20px;
+		margin-right: -55px;
+		display: block;
+	}
+/*	.header .iphone .iphone_1{
+		width: 48px;
+		height: 48px;
+		background-position: -46px 0;
+		margin-top: 20px;
+		margin-left: 15px;
+		display: inline-block;
+	}*/
+/*.header .font{
+		position: relative;
+	}*/
+.header .font a{
+	position: absolute;
+	text-decoration: none;
+	color:blue;
+	font-size: 15px;
+	margin-left: 20px;
+	/*float: right;*/
+	right:40px;
+	top:40px;
+}
+.banner{
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.banner p{
+	position: absolute;
+	top:0px;
+	right: 40.5%;
+    top:22%;
+    font-size: 25px;
+    color:#fff;
+
+}
+.banner dd{
+	position: absolute;
+	top:0px;
+	right: 25%;
+    top:42%;
+    font-size: 18px;
+    color:#fff;
+
+}
+.banner dt{
+	position: absolute;
+	top:0px;
+	right: 35%;
+    top:63%;
+    font-size: 15px;
+    color:#fff;
+}
+.banner dt a{
+    color:#fff;
+}
+
+.banner .download{
+    position: absolute;
+    overflow: hidden;
+    right: 36.5%;
+    top:50%;
+}
+.banner .download a {
+	display: block;	
+	background-position: 0 -152px;
+	width: 243px;
+    height: 76px;
+
+}
+.banner .download a:hover{
+	background-position: 0 -76px;
+}
+.control{
+	width: 1100px;
+	margin: 0 auto;
+}
+.control span{
+    font-size: 20px;
+    color:#555;
+    /*left: 50%;   */
+    /*margin-top: 30px;
+    line-height: 80px;
+    margin-left: 20px;*/
+    float: left;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.control ul li{
+	float: left;	
+}
+.control ul li a{
+	padding: 15px 25px;
+	float: left;
+	margin-right: 20px;
+}
+.control_us{
+	margin: 0 auto;
+	width: 1100px;
+	margin-top: 20px;
+}
+.control_us ul li{
+	float: left;
+	/*padding: 10px 0;*/
+    margin: 0 2px;
+    /*max-width: 800px;*/
+    /*max-height: 300px;*/
+}
+/*.control_us ul li img{
+	position: relative;
+}
+.control_us ul li img span{
+	position: absolute;
+    bottom:0;
+   left: -100px
+}
+*/
+.content{
+	margin: 0 auto;
+	width: 1100px;
+	padding: 20px 0;
+	border: 1px solid #888;
+	margin-top: 20px;
+	overflow: hidden;
+}
+.content h1{
+	padding-bottom: 20px;
+	color:blue;
+	font-size: 18px;
+    text-indent: 20px;
+}
+.content ul li{
+	float: left;
+	color:#333;
+	margin: 0 20px;
+	font-size: 15px;
+	/*line-height: 30px;*/
+	/*width: 1080px;*/
+	/*padding: 0 0.5% 0 0.5%;*/
+}
+.content ul li a{
+	text-decoration: none;
+	color:#333;
+	display: block;
+	width: 500px;
+	float: left;
+	/*height: 30px;*/
+}
+.content ul li a:hover{
+	text-decoration: underline;
+	color:blue;
+}
+.content_us {
+	margin: 0 auto;
+	width: 1100px;
+	margin-top: 20px;
+}
+.content_us h1{
+	float: left;
+	margin-top: 20px;
+	color:#888;
+	font-size: 18px;
+}
+.content_us ul{
+   float: left;
+}
+.content_us ul li{
+	float: left;
+	margin-top: 20px;
+	margin-left: 10px;
+	/*margin: 0 20px;*/
+}
+.content_us span{
+	float: left;
+	margin-top: 25px;
+	margin-left: 10px;
+}
+.content_us span a{
+	text-decoration: none;
+}
+.content_us span a:hover{
+	text-decoration: underline;
+}
+.footer {
+	margin: 0 auto;
+	width: 1200px;
+	margin-top: 30px;
+}
+.footer h1{
+	float: left;
+	padding: 10px 0;
+	color:#888;
+	font-size: 18px;
+}
+.footer ul li{
+	/*float: right;*/
+	margin: 10px 32px;
+	padding: 10px 55px;
+	text-indent: 0px;
+}
+.footer ul li a{
+	text-decoration: none;
+	color:#888;
+    margin-left: 10px;
+    /*margin: 0 10px;*/
+   /* font-size: 17px;*/
+   /* width: 58.5%;*/
+}
+.footer ul li a:hover{
+	text-decoration: underline;
+}
+.bottom{
+     margin: 0 auto;
+     width: 1100px;
+
+}
+.bottom p{
+	text-align: center;
+}
+.bottom p a{
+	color:#333;
+	font-size: 15px;
+	text-decoration: none;
+}
+.bottom p a:hover{
+	text-decoration: underline;
+}
+.bottom dd{
+	text-align: center;
+	font-size: 13px;
+	color:#9E9E9E;
+}
