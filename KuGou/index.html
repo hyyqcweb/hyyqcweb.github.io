@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>酷狗音乐和音乐在一起</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script>
+       window.onload=function()
+       {
+       	var oDiv=document.getElementById('pic');
+       	var aImg=document.getElementsByTagName('img')[0];
+       	var oPrev=document.getElementById('prev');
+       	var oNext=document.getElementById('next');
+       	var oUl=oDiv.getElementsByTagName('ul')[0];
+       	var aLi=oUl.getElementsByTagName('li');
+       	var arrUrl=['img/1.jpg','img/2.jpg','img/3.jpg','img/4.jpg','img/5.jpg','img/6.jpg','img/7.jpg','img/8.jpg','img/9.jpg'];
+       	var num=0;
+
+       	for(var i=0;i<arrUrl.length;i++)
+       		oUl.innerHTML+='<li></li>';      	
+       // 	aImg.src=arrUrl[num];
+       	aLi[num].className='active';
+       // 	for(var i=0;i<aLi.length;i++)
+       // 	{
+       // 		aLi[i].index=i;
+       // 		aLi[i].onclick=function()
+       // 		{
+       // 			aImg.src=arrUrl[this.index];
+       // 		}
+       // 	}
+       // 	function toTag()
+       // 	{
+       // 		aImg.src=arrUrl[num];
+       // 	}
+       // 	toTag();
+       // 	oPrev.onclick=function()
+       // 	{
+       // 		num--;
+       // 		if(num==-1)
+       // 		{
+       // 			num=8;
+       // 		}
+       // 		toTag();
+       // 	}
+       }
+	</script>	
+</head>
+<body>
+<div class="page">
+	<div class="header clearfix">
+		<div class="logo">
+			<img src="img/logo.png" alt="">
+		</div>
+		<div class="menu">
+			<ul>
+				<li>
+					<a href="http://www.kugou.com/reg/web/">注册</a>
+					<a href="http://www.kugou.com/">登录</a>
+					<a href="http://www.kugou.com/shop/help/serviceCenter">客服中心</a>
+					<a href="http://www.kugou.com/job/hr/html/index.html">招贤纳士</a>
+					<a href="http://vip.kugou.com/">VIP中心</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="corssband clearfix">
+		<div class="nav">
+		<div class="home">
+			<ul>
+				<li class="active"> <a href="http://www.kugou.com/">首页</a></li>
+
+				<li><a href="http://www.kugou.com/yy/html/rank.html">榜单</a></li>
+
+				<li><a href="http://download.kugou.com/">产品中心</a></li>
+			</ul>
+		</div>
+		<div class="more">
+				<ul>
+        		<li><a href="http://fanxing.kugou.com/?action=spreadIndex&id=3" class="img_1">音乐直播</a></li>
+        		<li><a href="http://live.kugou.com/" class="img_2">酷狗</a></li>
+        		<li><a href="http://www.kugou.com/imusic/" class="img_3">音乐人</a></li>
+        		<li><a href="http://games.kugou.com/?f=7" class="img_4">游戏</a></li>
+        		<li><a href="http://www.kugou.com/shop" class="img_5">商城</a></li>
+        		<li><a href="JavaScript:;" class="img_6">更多</a>
+                    <ul>
+                    	<li><a href="http://www.kugou.com/fmweb/html/index.html">电台</a></li>
+                    	<li><a href="http://www.kugou.com/mvweb/html/">MV</a></li>
+                    	<li><a href="http://www.kugou.com/yy/html/special.html">歌单</a></li>
+                    </ul>
+        		</li>
+        	</ul>
+		</div>
+	    </div>
+	</div>
+	<div class="banner clearfix" id="pic">
+		<img src="img/9.jpg" alt="">
+		<a href="javaScript:;" id="prev"> < </a>
+		<a href="javaScript:;" id="next"> > </a>
+		<ul>
+<!-- 			<li class="active"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			 -->
+		</ul>
+
+	</div>
+	<div class="download clearfix">
+		<a href="javascirpt:;">
+			<img src="img/download_bg.png" alt="">
+		</a>
+	</div>
+	<div class="sub clearfix">
+		<div class="sheet">
+			<div class="font">
+				<h3><span>精选</span>歌单</h3>
+				<a href="javascript:;">更多</a>
+			</div>
+			<div class="menu">
+				<div class="big">
+					<span>246506万</span>
+					<p>一人一首被错过的华语好歌</p>
+					<h2>实际担保7s</h2>
+					<img src="img/11.jpg" alt="">
+				</div>
+				<div class="small">
+				   <ul>
+				   	<div class="small_1">
+					<li>
+					   <!-- <span>5234984万</span>
+					   <p>为何相爱那么难</p>
+					   <h2>阿白</h2> -->
+					   <img src="img/12.jpg" alt="">
+					</li>
+                    </div>
+					<li>
+					   <!-- <span>9550万</span>
+					   <p>2016夏季...</p>
+					   <h2>风影天下</h2> -->
+					   <img src="img/13.jpg" alt="">
+					</li>
+
+					<li>
+					   <!-- <span>99990000万</span>
+					   <p>中国新歌声 合...</p>
+					   <h2>驸马</h2> -->
+					   <img src="img/14.jpg" alt="">
+					</li>
+
+					<li>
+					   <!-- <span>67514万</span>
+					   <p>深情男生诉说...</p>
+					   <h2>那时花开</h2> -->
+					   <img src="img/15.jpg" alt="">
+					</li>
+				   </ul>
+			    </div>
+			</div>
+		</div>
+		<div class="hot">
+			<div class="font">
+			    <h3><span>热门</span>榜单</h3>
+				<a href="javascript:;">更多</a>
+			</div>
+			<div class="menu">
+				<ul>
+				  <div class="box">
+					<li>
+						<img src="img/20.jpg" alt="">
+					</li>
+					<div class="list">
+						<p>华语新歌榜</p>
+						<dd>1.黄子韬-Mystery Gril</dd>
+						<dt>2.汪苏泷-一笑倾城</dt>
+					</div>
+				  </div>
+
+                  <div class="box">
+					<li>
+						<img src="img/21.jpg" alt="">
+					</li>
+					<div class="list">
+						<p>酷狗飙升榜</p>
+						<dd>1.水木年华-唯你一生【...</dd>
+						<dt>2.黄子韬-Adore</dt>
+					</div>
+				  </div>
+
+                 <div class="box">
+					<li>
+						<img src="img/22.jpg" alt="">
+					</li>
+					<div class="list">
+						<p>酷狗TOP500</p>
+						<dd>1.薛之谦-演员</dd>
+						<dt>2.薛之谦-丑八怪</dt>
+					</div>
+				</div>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="hardware clearfix">
+		<img src="img/hardware.jpg" alt="">
+	</div>
+	<div class="middle clearfix">
+		<div class="issue">
+			<div class="font">
+				<h3><span>新歌</span>首发</h3>
+				<div class="list">
+				   <li><h4 class="active">华语</h4></li>
+				   <li><h4>欧美</h4></li>
+				   <li><h4>韩国</h4></li>
+				   <li><h4>日本</h4></li>			   
+			    </div>
+				<a href="javascript:;">全部播放</a>
+			</div>
+			<div class="border"></div>
+			<div class="Flat_list">
+				   	<ul>
+				   		<li>黄子韬 - Adore
+                              <a href="javascript:;">
+                              	<span class="song"><img src="img/first.png" alt=""></span>
+                              	<span class="time">03:29</span>
+                              </a>
+				   		</li>
+				   		<li>
+				   			李琦 - 我的天空+Just A Dream(Live)
+				   			<a href="javascript:;">
+				   				<span class="song"><img src="img/first.png" alt=""></span>
+				   				<span class="time">03:08</span>
+				   			</a>
+				   		</li>
+				   		<li>薛之谦、张信哲 - 信仰+演员+爱如潮水(Live)
+				   			<a href="javascript:;">
+				   				<!-- <span class="song"><img src="img/first.png" alt=""></span> -->
+				   				<span class="time">05:39</span>
+				   			</a>
+				   		</li>
+				   		<li>蔡健雅 - 当我想你的时候(Live)
+				   			<a href="javascript:;">
+				   				<!-- <span class="song"><img src="img/first.png" alt=""></span> -->
+				   				<span class="time">04:26</span>
+				   			</a>
+				   		</li>
+				   		<li>洪辰 - 腔骨龙
+				   			<a href="javascript:;">
+				   				<span class="song"><img src="img/first.png" alt=""></span>
+				   				<span class="time">03:21</span>
+				   			</a>
+				   		</li>
+				   		<li>梁咏琪 - 红棉路上
+				   			<a href="javascript:;">
+				   				<!-- <span class="song"><img src="img/first.png" alt=""></span> -->
+				   				<span class="time">03:36</span>
+				   			</a>
+				   		</li>
+				   		<li>涣米 - 洪荒之力
+				   			<a href="javascript:;">
+				   				<span class="song"><img src="img/first.png" alt=""></span>
+				   				<span class="time">03:21</span>
+				   			</a>
+				   		</li>
+				   		<li>汪苏泷 - 一笑倾城【微微一笑很倾城片头曲】
+				   			<a href="javascript:;">
+				   				<span class="song"><img src="img/first.png" alt=""></span>
+				   				<span class="time">03:51</span>
+				   			</a>
+				   		</li>
+				   	</ul>
+				   	 <div class="next">
+				   	       <a href="javascript:;" id="prev"> < </a>
+				           <a href="javascript:;"> 1/3 </a>
+				   	       <a href="javascript:;" id="nexts"> > </a>
+				     </div>
+				   </div>		
+		</div>
+		<div class="groom">
+			<div class="font">
+				<h3><span>推荐</span>MV</h3>
+				<a href="javascript:;">更多</a>
+			</div>
+			<div class="menu">
+				<div class="array">
+					<p>Lost in Stars</p>
+					<h2>张杰</h2>
+					<img src="img/30.jpg" alt="">
+				</div>
+				<div class="box">
+					<ul>
+				<li>
+					<img src="img/31.jpg" alt="">
+					<a href="javascript:;">Secret</a>
+				    <h3>俞利、徐玄</h3>	
+				</li>		
+			    <li>
+			    	<img src="img/32.jpg" alt="">
+					<a href="javascript:;">全面沦陷</a>
+				    <h3>张韶涵</h3>					
+                </li>
+                   </ul>
+			   </div>
+			</div>
+		</div>
+	</div>
+	<div class="hardware_1 clearfix">
+		<img src="img/1.png" alt="">
+	</div>
+    <div class="radio clearfix">
+    	<div class="radio_left">
+    	  <div class="font">
+    		<h3><span>热门</span>电台</h3>
+			<a href="javascript:;">更多</a>
+    	   </div>
+    	<div class="menu">
+    		<ul>
+    		    <li><img src="img/radio_1.jpg" alt="">
+    			<span class="active">KTV必点歌曲</span></li>
+
+    			<li><img src="img/radio_2.jpg" alt="">
+    			<span class="active">中文DJ</span></li>
+
+    			<li><img src="img/radio_3.jpg" alt="">
+    			<span class="active">酷狗热歌</span></li>
+
+    			<li><img src="img/radio_4.jpg" alt="">
+    			<span class="active">网络红歌</span></li>
+
+    			<li><img src="img/radio_5.jpg" alt="">
+    			<span class="active">经典</span></li>
+
+    			<li><img src="img/radio_6.jpg" alt="">
+    			<span>老情歌</span></li>
+
+    			<li><img src="img/radio_7.jpg" alt="">
+    			<span>新歌</span></li>
+
+    			<li><img src="img/radio_8.jpg" alt="">
+    			<span>动漫</span></li>
+
+    			<li><img src="img/radio_9.jpg" alt="">
+    			<span>轻音乐</span></li>
+
+    			<li><img src="img/radio_10.jpg" alt="">
+    			<span>最爱成名曲</span></li>
+    		</ul>
+    	</div>
+       </div>
+       <div class="radio_right">
+       	    <div class="font">
+    		<h3><span>热门</span>歌手</h3>
+			<div class="list">
+				   <li><h4 class="active">华语</h4></li>
+				   <li><h4>欧美</h4></li>
+				   <li><h4>日韩</h4></li>
+				   <li><h4>其他</h4></li>			   
+			    </div>
+    	   </div>
+    	   <div class="box">
+    	   	<div class="big">
+    	   		<li><img src="img/34.jpg" alt="">
+    	   			<p>薛之谦</p></li>
+    	   		<li><img src="img/35.jpg" alt="">
+    	   			<p>庄心妍</p></li>
+    	   	</div>
+    	   	<div class="small">
+    	   		<li><img src="img/36.jpg" alt="">
+    	   			<p>周杰伦</p></li>
+    	   		<li><img src="img/37.jpg" alt="">
+    	   			<p>陈奕迅</p></li>
+    	   		<li><img src="img/38.jpg" alt="">
+    	   			<p>冷漠</p></li>
+    	   	</div>
+    	   	<div class="list">
+    	   		<ul>
+    	   			<li class="active">1</li>
+    	   			<li>2</li>
+    	   			<li>3</li>
+    	   		</ul>
+    	   	</div>
+    	   </div>
+       </div>
+    </div>
+    <div class="hardware_2 clearfix">
+    	<img src="img/2.png" alt="">
+    </div>
+    <div class="cooperate clearfix">
+    	<div class="font">
+    		<h3><span>合作</span>伙伴</h3>
+    	</div>
+    	<div class="content">
+    		<div class="ico">
+    			<li><img src="img/partner01.jpg" alt=""></li>
+    			<li><img src="img/partner02.jpg" alt=""></li>
+    			<li><img src="img/partner03.jpg" alt=""></li>
+    			<li><img src="img/partner04.jpg" alt=""></li>
+    			<li><img src="img/partner05.jpg" alt=""></li>
+    			<li><img src="img/partner06.jpg" alt=""></li>
+    			<li><img src="img/partner07.jpg" alt=""></li>
+    			<li><img src="img/partner08.jpg" alt=""></li>
+    			<li><img src="img/partner09.jpg" alt=""></li>
+    			<li><img src="img/partner10.jpg" alt=""></li>
+    			<li><img src="img/partner11.jpg" alt=""></li>
+    			<li><img src="img/partner12.jpg" alt=""></li>
+    			<li><img src="img/partner13.jpg" alt=""></li>
+    			<li><img src="img/partner14.jpg" alt=""></li>
+    			<li><img src="img/partner15.jpg" alt=""></li>
+    			<li><img src="img/partner16.jpg" alt=""></li>
+    			<li><img src="img/partner17.jpg" alt=""></li>
+    			<li><img src="img/partner18.jpg" alt=""></li>
+    			<li><img src="img/partner19.jpg" alt=""></li>
+    			<li><img src="img/partner20.jpg" alt=""></li>
+    			<li><img src="img/partner21.jpg" alt=""></li>
+    		</div>
+    	</div>
+    </div>
+    <div class="link clearfix">
+    	<div class="font">
+    		<h3><span>友情</span>链接</h3>
+			<a href="javascript:;">更多</a>
+    	</div>
+    	<div class="char">
+    		<div class="char_link">
+    			<li><a href="http://www.lady8844.com/">爱美网</a></li>
+    			<li><a href="http://ent.cntv.cn/">央视网综艺频道</a></li>
+    			<li><a href="http://www.warsu.com/">华数唱片</a></li>
+    			<li><a href="http://baa.bitauto.com/">汽车论坛</a></li>
+    			<li><a href="http://www.docin.com/">豆丁网</a></li>
+    			<li><a href="http://www.ithome.com/">IT之家</a></li>
+    			<li><a href="http://www.25pp.com/">iPhone游戏</a></li>
+    			<li><a href="hhttp://you.ctrip.com/">旅游攻略</a></li>
+    			<li><a href="http://www.yswxcn.com/">悦声无限</a></li>
+    			<li><a href="http://www.vmall.com/">华为商城</a></li>
+    			<li><a href="http://www.yue365.com/">365音乐网</a></li>
+    			<li><a href="http://www.xiazaiba.com/">软件下载</a></li>
+    			<li><a href="http://www.manmankan.com/">漫漫看漫画</a></li>
+    			<li><a href="http://www.meilele.com/">家具网上商城</a></li>
+    			<li><a href="http://www.9game.cn/">手机游戏</a></li>
+    		</div>
+    	</div>
+    </div>
+    <div class="footerWrapper">
+    	<div class="footer">
+            <div class="links">
+            	<ul>
+            		<li><a href="http://www.kugou.com/about/aboutus.html">关于酷狗</a>|</li>
+            		<li><a href="http://www.kugou.com/about/adservice.html">广告服务</a>|</li>
+            		<li><a href="http://www.kugou.com/about/copyRightGuide.html">版权指引</a>|</li>
+            		<li><a href="http://www.kugou.com/about/protocol.html">用户服务协议</a>|</li>
+            		<li><a href="http://www.kugou.com/company/partners.html">推广合作</a>|</li>
+            		<li><a href="http://www.kugou.com/imusic/">酷狗音乐人</a>|</li>
+            		<li><a href="http://tui.kugou.com/">酷狗音乐推</a>|</li>
+            		<li><a href="http://www.kugou.com/job/hr/html/">招聘信息</a>|</li>
+            		<li><a href="http://www.kugou.com/shop/help/serviceCenter">客服中心</a>|</li>
+            		<li><a href="http://survey.kugou.com/default/index/i=40CD7B8437008E65E67D82D9044C15C99C2E699859F51338">用户体验提升计划</a></li>
+            	</ul>
+            </div>
+            <div class="b"></div>
+    		<div class="footer_bottom">
+    			<p>我们致力于推动网络正版音乐发展，相关版权合作请联系copyrights@kugou.com</p>
+    			<p>信息网络传播视听节目许可证 1910564 增值电信业务经营许可证粤B2-20060339    
+    				<a href="http://www.miitbeian.gov.cn/">粤ICP备09017694号-2</a></p>
+    			<p>广播电视节目制作经营许可证（粤）字第01270号    营业性演出许可证穗天演440106026
+
+    			<span>穗公网监备案证第44010650010167</span>
+    		    </p>
+    			<p>
+    				Copyright  ©  2004-2016 KuGou-Inc.All Rights Reserved
+    				<img src="img/logo_down.png" alt="">
+    			</p>
+    		</div>
+    	</div>
+
+    </div>
+</div>
+</body>
+</html>
