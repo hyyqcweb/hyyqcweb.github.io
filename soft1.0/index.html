@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>浙江邮电职业技术学院-软件技术专业</title>
+		<link rel="stylesheet" href="folder/font-awesome.min.css">
+		<link rel="stylesheet" href="folder/app.css">
+		<script src="folder/jquery-1.10.2.min.js"></script>
+		<link href="folder/fotorama.css" rel="stylesheet">
+		<script src="folder/fotorama.js"></script>
+		<script src="folder/responsiveslides.min.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<!--<link rel="stylesheet" type="text/css" href="folder/style.css" />-->
+		<style>
+			.personal,
+			.personal_1,
+			.personal_2 {
+				position: relative;
+				width: 100%;
+			}
+			
+			.personal p,
+			.personal_1 p,
+			.personal_2 p {
+				float: none;
+			}
+			
+			.personal p img {
+				width: 280px;
+				height: 280px;
+				margin: 10px;
+			}
+			
+			@media all and (max-width: 800px) {
+				.personal {
+					position: relative;
+					width: 100%;
+				}
+				.personal p {
+					float: none;
+				}
+				.personal p img {
+					width: 130px;
+					height: 130px;
+					margin: 10px;
+				}
+			}
+			
+			.personal_1 p img {
+				width: 210px;
+				height: 210px;
+				margin: 10px;
+			}
+			
+			@media all and (max-width: 800px) {
+				.personal_1 {
+					position: relative;
+					width: 100%;
+				}
+				.personal_1 p {
+					float: none;
+				}
+				.personal_1 p img {
+					width: 100px;
+					height: 100px;
+					/*margin: 0 10px;*/
+				}
+			}
+			
+			.personal_2 p img {
+				width: 330px;
+				height: 330px;
+				margin: 5px;
+			}
+			
+			@media all and (max-width: 800px) {
+				.personal_2 {
+					position: relative;
+					width: 100%;
+				}
+				.personal_2 p {
+					float: none;
+				}
+				.personal_2 p img {
+					width: 160px;
+					height: 160px;
+					/*margin: 0 5px;*/
+				}
+				li {
+					list-style-type: none;
+				}
+			}
+			
+			#nav-toggle span {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+			}
+			
+			#nav-toggle span,
+			#nav-toggle span:before,
+			#nav-toggle span:after {
+				cursor: pointer;
+				border-radius: 1px;
+				height: 5px;
+				width: 35px;
+				background: gray;
+				position: absolute;
+				display: block;
+				content: '';
+			}
+			
+			#nav-toggle span:before {
+				top: -10px;
+			}
+			
+			#nav-toggle span:after {
+				bottom: -10px;
+			}
+			
+			#triangle-up {
+				display: inline-block;
+				width: 0;
+				height: 0;
+				border-left: 10px solid transparent;
+				border-right: 10px solid transparent;
+				border-bottom: 10px solid gray;
+			}
+			
+			#triangle {
+				display: inline-block;
+				width: 0;
+				height: 0;
+				border-left: 10px solid transparent;
+				border-right: 10px solid transparent;
+				border-top: 10px solid transparent;
+				border-bottom: 0px solid gray;
+			}
+		</style>
+
+		<STYLE type=text/css>
+			#center {
+				LEFT: 50%;
+				POSITION: absolute;
+				TOP: 50%
+			}
+			
+			#DHTMLBOOK {
+				BACKGROUND: #000;
+				LEFT: -210px;
+				VISIBILITY: hidden;
+				WIDTH: 420px;
+				POSITION: relative;
+				TOP: -160px;
+				HEIGHT: 320px
+			}
+			
+			#TXTBOX {
+				FONT-SIZE: 0.8em;
+				WIDTH: 410px;
+				COLOR: #aba193;
+				FONT-FAMILY: verdana;
+				POSITION: absolute;
+				TOP: 320px;
+				TEXT-ALIGN: center
+			}
+			
+			.page {
+				OVERFLOW: hidden;
+				BORDER-LEFT: #000000 1px solid;
+				WIDTH: 50%;
+				CURSOR: pointer;
+				POSITION: absolute;
+				HEIGHT: 100%
+			}
+			
+			.right {
+				BORDER-RIGHT: #000000 1px solid;
+				LEFT: 50%
+			}
+			
+			.turn {
+				BACKGROUND: #000000
+			}
+			
+			.img {
+				WIDTH: 200%;
+				POSITION: absolute;
+				HEIGHT: 100%
+			}
+		</STYLE>
+		<SCRIPT type=text/javascript>
+			document.onselectstart = function() {
+				return false;
+			}
+
+			var nI = 0;
+			var kI = 0;
+			var run = false;
+
+			function setOpacity(obj, o) {
+				if(o < 0) o = 0;
+				else if(o > 100) o = 100;
+				if(obj.filters) obj.filters.alpha.opacity = o;
+				else obj.style.opacity = o / 100;
+			}
+
+			function TPR__(p) {
+				P1.style.left = 50 - (2.5 * p) + "%";
+				P1.style.width = (2.5 * p) + "%";
+				setOpacity(P1i, .5 * p * p);
+				if(p == 20) run = false;
+			}
+
+			function TPR_(p) {
+				P2.style.width = 50 - (2.5 * p) + "%";
+				setOpacity(P2i, 100 - .5 * (p * p));
+				if(p == 20) {
+					P2i.src = IMGSRC[kI].src;
+					setOpacity(P2i, 100);
+					P2.style.width = "50%";
+					for(var i = 1; i <= 20; i++) setTimeout("TPR__(" + i + ")", i * 32);
+				}
+			}
+
+			function TPR() {
+				if(!run) {
+					run = true;
+					P01i.src = IMGSRC[kI].src;
+					P1.style.width = 0;
+					kI++;
+					if(kI >= nI) kI = 0;
+					titLe(kI);
+					P02i.src = IMGSRC[kI].src;
+					P1i.src = IMGSRC[kI].src;
+					for(var i = 1; i <= 20; i++) setTimeout("TPR_(" + i + ")", i * 32);
+				} else setTimeout("TPR()", 100);
+			}
+
+			function TPL__(p) {
+				P2.style.width = (2.5 * p) + "%";
+				setOpacity(P2i, .5 * p * p);
+				if(p == 20) run = false;
+			}
+
+			function TPL_(p) {
+				P1.style.left = (2.5 * p) + "%";
+				P1.style.width = 40 + (10 - 2.5 * p) + "%";
+				setOpacity(P1i, 100 - .5 * (p * p));
+				if(p == 20) {
+					P1i.src = IMGSRC[kI].src;
+					setOpacity(P1i, 100);
+					P1.style.left = 0;
+					P1.style.width = "50%";
+					for(var i = 1; i <= 20; i++) setTimeout("TPL__(" + i + ")", i * 32);
+				}
+			}
+
+			function TPL() {
+				if(!run) {
+					run = true;
+					P02i.src = IMGSRC[kI].src;
+					P2.style.width = 0;
+					kI--;
+					if(kI < 0) kI = nI - 1;
+					titLe(kI);
+					P01i.src = IMGSRC[kI].src;
+					P2i.src = IMGSRC[kI].src;
+					for(var i = 1; i <= 20; i++) setTimeout("TPL_(" + i + ")", i * 32);
+				} else setTimeout("TPL()", 100);
+			}
+
+			function titLe(p) {
+				document.getElementById("TXTBOX").innerHTML = IMGSRC[p].alt;
+			}
+			onload = function() {
+				IMGSRC = document.getElementById("imgsrc").getElementsByTagName("img");
+				DB = document.getElementById("DHTMLBOOK");
+				P01 = DB.getElementsByTagName("span")[0];
+				P01i = P01.getElementsByTagName("img")[0];
+				P02 = DB.getElementsByTagName("span")[1];
+				P02i = P02.getElementsByTagName("img")[0];
+				P1 = DB.getElementsByTagName("span")[2];
+				P1i = P1.getElementsByTagName("img")[0];
+				P2 = DB.getElementsByTagName("span")[3];
+				P2i = P2.getElementsByTagName("img")[0];
+				nI = IMGSRC.length;
+				P1i.src = IMGSRC[kI].src;
+				P2i.src = IMGSRC[kI].src;
+				titLe(kI);
+				DB.style.visibility = "visible";
+			}
+		</SCRIPT>
+		<style>
+			.rslides {
+				position: relative;
+				list-style: none;
+				overflow: hidden;
+				width: 100%;
+				padding: 0;
+				margin: 0;
+			}
+			
+			.rslides li {
+				-webkit-backface-visibility: hidden;
+				position: absolute;
+				display: none;
+				width: 100%;
+				left: 0;
+				top: 0;
+			}
+			
+			.rslides li:first-child {
+				position: relative;
+				display: block;
+				float: left;
+			}
+			
+			.rslides img {
+				display: block;
+				height: auto;
+				float: left;
+				width: 100%;
+				border: 0;
+			}
+		</style>
+		<link rel="shortcut icon" href="folder/slogo.png">
+	</head>
+
+	<body class="viewing-page-1">
+		<div class="section" id="app">
+			<div class="header clearfix header--change" id="header">
+				<div class="header__home">
+					<a href="javascript:void(0)"><img src="folder/slogo.png"><span>浙江邮电职业技术学院-软件技术专业</span></a>
+				</div>
+				<p class="header__menubox"><span class="header__icon">
+					<i id="nav-toggle"><span></span></i>
+					</span><span class="header__item header__item--active">
+					<a href="javascript:void(0)"><span>专业简介</span></a>
+					</span><span class="header__item"><a href="javascript:void(0)"><span>培养目标</span></a>
+					</span><span class="header__item"><a href="javascript:void(0)"><span>师资团队</span></a>
+					</span><span class="header__item"><a href="javascript:void(0)"><span>课堂生活</span></a>
+					</span><span class="header__item"><a href="javascript:void(0)"><span>作品实践</span></a>
+					</span><span class="header__item"><a href="javascript:void(0)"><span>就业</span></a>
+					</span>
+				</p>
+			</div>
+			<div class="main onepage-wrapper" id="main" style="position: relative;">
+				<div class="main__box home section active" data-index="1" style="position: absolute; top: 0%; left: 0px;">
+
+					<div class="main__mask clearfix">
+
+						<div class="main__info">
+							<h1 class="main__title">软件技术专业</h1>
+							<h3 class="main__title main__anim--top">选择软件=<span class="color--bule">选择成功</span></h3>
+						</div>
+
+						<div class="aboutUs">
+							<h2 class="main__title main__anim--left">专业简介</h2>
+							<div class="soft">
+								<p class="main__anim--left">
+									本专业的主要培养方向为移动互联网产品开发、Web开发(PC端和移动端)，并辅以软件产品测试 、运营推广、技术支持等岗位。本专业创办于 2009年，经过几年的积累已经取得了不错的成绩。
+								</p>
+								<p class="main__anim--right">
+									学生获全国软件技能大赛一等奖、浙江省软件技能大赛一等奖多人；浙江省ACM竞赛特等奖、金奖、银奖多项；浙江省多媒体竞赛二等奖； 绍兴市程序设计竞赛一等奖多人次、服务外包竞赛一等奖、绍兴市多媒体竞赛二等奖等多人次。
+								</p>
+								<p class="main__anim--left">
+									教师获全国、省、市竞赛优秀指导教师4名；浙江省高校优秀青年教师资助计划培养对象2人；浙江省高职高专院校专业带头人培养对象1人；绍兴市十佳科技指导员 1人，优秀科技指导员1人；省公司十佳员工：1人 本专业有专业教师6名，均为硕士，均有一线开发经历。有6名企业开发设计人员组成的兼职教师，均在行内有一定的影响力。教师承担省市各级各类课题十余项，发表论文十余篇，出版教材多本。
+								</p>
+								<p class="main__anim--right">
+									在学生培养的过程中，保持与行业技术更新速度，注重学生实际项目能力。有多家深度合作的企业，进行学生实习、项目开发、技术沙龙等活动。创办由师生共同参与的ACE工作室，承接校内外项目。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main__box section" data-index="2" style="position: absolute; top: 100%; left: 0px;">
+					<div class="main__mask clearfix">
+						<h2 class="main__title main__anim--top">培养目标</h2>
+						<div class="aboutUs">
+							<p class="overstriking">培养目标</p>
+							<p class="main__anim--left">本专业培养德、智、体、美等全面发展，具有良好的文化素养和综合职业能力，面向移动互联网领域，从事移动互联网领域软件产品开发、运营管理、技术支持等岗位的高级技术应用型专业人才。</p>
+							<p class="overstriking">主干课程</p>
+							<p class="main__anim--right">Java程序设计、界面设计、前端开发、交互开发、数据库管理与应用、Java Web开发、Linux操作系统、软件工程、电子商务等。</p>
+							<p class="overstriking">就业面向</p>
+							<p class="main__anim--left">面向移动互联网领域，从事移动端Web开发、Web系统开发、Web前端开发、混合式开发、运营推广、服务等，也可在相关企事业单位从事软件开发、系统维护、技术支持等工作。</p>
+							<p class="aboutUs__img main__anim--right"><img src="folder/banner02.jpg"></p>
+						</div>
+					</div>
+				</div>
+				<div class="main__box section" data-index="3" style="position: absolute; top: 200%; left: 0px;">
+					<div class="main__mask clearfix">
+						<h2 class="main__title main__anim--right">师资团队</h2>
+						<center>
+							<div class="fotorama" data-width="700" data-ratio="700/467" data-max-width="100%">
+								<img src="folder/1.jpg" alt="" />
+								<img src="folder/2.jpg" alt="" />
+								<img src="folder/3.jpg" alt="" />
+								<img src="folder/4.jpg" alt="" />
+								<img src="folder/5.jpg" alt="" />
+								<img src="folder/6.jpg" alt="" />
+							</div>
+						</center>
+						<!--<div class="solve">
+							<div class="solve__itemBox clearfix">
+								<div class="solve__item u-fl">
+									<p><img src="folder/1.jpg"></p>
+								</div>
+								<div class="solve__item u-fl">
+									<p><img src="folder/2.jpg"></p>
+								</div>
+								<div class="solve__item u-fl">
+									<p><img src="folder/3.jpg"></p>
+								</div>
+								<div class="solve__item u-fl">
+									<p><img src="folder/4.jpg"></p>
+								</div>
+								<div class="solve__item u-fl">
+									<p><img src="folder/5.jpg"></p>
+								</div>
+								<div class="solve__item u-fl">
+									<p><img src="folder/6.jpg"></p>
+								</div>
+							</div>
+							<div class="solve__leftBtn"> <img src="folder/left.png"></div>
+							<div class="solve__rightBtn"><img src="folder/right.png"></div>
+						</div>-->
+					</div>
+				</div>
+				<div class="main__box section" data-index="4" style="position: absolute; top: 300%; left: 0px;">
+					<div class="main__mask clearfix">
+						<h2 class="main__title main__anim--top">课堂生活</h2>
+						<DIV id=center>
+							<DIV id=DHTMLBOOK>
+								<SPAN class=page onMouseDown="return false;" ondblclick=TPL(); onclick=TPL();><IMG class=img></SPAN>
+								<SPAN class="page right" onmousedown="return false;" ondblclick=TPR(); onclick=TPR();><IMG class=img style="LEFT: -100%"></SPAN>
+								<SPAN class="page turn" onMouseDown="return false;" ondblclick=TPL(); onclick=TPL();><IMG class=img style="FILTER: alpha(); opacity: 1"></SPAN>
+								<SPAN class="page turn right" onmousedown="return false;" ondblclick=TPR(); onclick=TPR();><IMG class=img style="FILTER: alpha(); LEFT: -100%; opacity: 1"></SPAN>
+								<DIV id=TXTBOX></DIV>
+							</DIV>
+						</DIV>
+						<DIV id=imgsrc style="VISIBILITY: hidden">
+							<IMG alt="" src="folder/我们的生活1.jpg">
+							<IMG alt="" src="folder/我们的生活2.jpg">
+							<IMG alt="" src="folder/我们的生活3.jpg">
+							<img src="folder/我们的生活4.jpg" alt="" />
+							<img src="folder/我们的生活5.jpg" alt="" />
+							<img src="folder/我们的生活6.jpg" alt="" />
+							<img src="folder/我们的学习2.jpg" alt="" />
+							<img src="folder/我们的学习3.jpg" alt="" />
+							<img src="folder/我们的学习4.jpg" alt="" />
+							<img src="folder/我们的学习5.jpg" alt="" />
+							<img src="folder/我们的生活1.jpg" alt="" />
+						</DIV>
+						<!--</DIV>-->
+
+						<!--<div class="container">
+   				 <div class="grid">
+		             <figure class="effect-sarah">
+			            <img src="folder/我们的生活1.jpg" alt="img13"/>
+			            <figcaption>
+			                <h2>Free <span>Sarah</span></h2>
+			                <p>Sarah likes to watch clouds. She's quite depressed.</p>
+			                <a href="#" target="_blank">View more</a>
+			            </figcaption>			
+		        	</figure>
+		        	<figure class="effect-sarah">
+			            <img src="folder/我们的生活2.jpg" alt="img13"/>
+			            <figcaption>
+			                <h2>Free <span>Sarah</span></h2>
+			                <p>Sarah likes to watch clouds. She's quite depressed.</p>
+			                <a href="#" target="_blank">View more</a>
+			            </figcaption>			
+		        	</figure>
+        	   </div>
+			</div>-->
+					</div>
+				</div>
+				<div class="main__box section" data-index="5" style="position: absolute; top: 400%; left: 0px;">
+					<div class="main__mask clearfix">
+						<h2 class="main__title main__anim--right">作品实践</h2>
+						<center>
+							<div class="fotorama" data-width="700" data-ratio="700/467" data-max-width="100%">
+								<img src="folder/我们的实践1.jpg">
+								<img src="folder/我们的实践2.jpg">
+								<img src="folder/我们的实践3.jpg">
+								<img src="folder/我们的实践4.jpg">
+								<img src="folder/我们的实践6.jpg" alt="" />
+								<img src="folder/我们的作品.jpg" alt="" />
+								<img src="folder/我们的作品1.jpg" alt="" />
+								<img src="folder/我们的作品2.jpg" alt="" />
+								<img src="folder/我们的作品3.jpg" alt="" />
+								<img src="folder/我们的作品4.jpg" alt="" />
+								<img src="folder/我们的作品5.jpg" alt="" />
+								<img src="folder/我们的作品6.jpg" alt="" />
+								<img src="folder/我们的作品7.jpg" alt="" />
+								<img src="folder/我们的作品8.jpg" alt="" />
+								<img src="folder/我们的作品9.jpg" alt="" />
+								<img src="folder/我们的作品10.jpg" alt="" />
+								<img src="folder/我们的作品11.jpg" alt="" />
+								<img src="folder/我们的作品12.jpg" alt="" />
+								<img src="folder/我们的作品13.jpg" alt="" />
+								<img src="folder/我们的作品14.jpg" alt="" />
+							</div>
+						</center>
+					</div>
+				</div>
+				<div class="main__box section" data-index="6" style="position: absolute; top: 500%; left: 0px;">
+					<div class="main__mask clearfix">
+						<h2 class="main__title main__anim--top">就业</h2>
+						<center>
+							<div class="fotorama" data-width="700" data-ratio="700/467" data-max-width="100%">
+								<img src="folder/25.png" alt="" />
+								<img src="folder/26.png" alt="" />
+								<img src="folder/27.png" alt="" />
+								<img src="folder/28.png" alt="" />
+								<img src="folder/29.png" alt="" />
+								<img src="folder/30.png" alt="" />
+								<img src="folder/31.png" alt="" />
+								<img src="folder/32.png" alt="" />
+							</div>
+						</center>
+						<!--<div class="personal_2 main__title main__anim--left">
+            	<p>
+            		<img src="folder/25.png" alt="" />
+            		<img src="folder/26.png" alt="" />
+            		<img src="folder/27.png" alt="" />
+            		<img src="folder/28.png" alt="" />
+            		<img src="folder/29.png" alt="" />
+            		<img src="folder/30.png" alt="" />
+            		<img src="folder/31.png" alt="" />
+            		<img src="folder/32.png" alt="" />
+            	</p>
+            </div>-->
+						<div class="us__info">
+							<div>友情链接：
+								<a href="http://zptc.cn/">浙江邮电职业技术学院</a>
+							</div>
+							<div>© 2016 浙江邮电职业技术学院-ACE工作室-江俊杰、郑钟楠 版权所有</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<ul class="tools">
+				<li><i id="triangle-up"><span></span></i>
+					<p>
+						<a href="70tech.html"></a>回到顶部</p>
+				</li>
+				<li class="qrcode__box"><i id="triangle"><span></span></i>
+					<p>二维码</p>
+					<ul class="download">
+						<li><i class="fa fa-zy"></i>
+							<p>总院</p><img src="folder/二维码1.png">
+						</li>
+						<li><i class="fa fa-gx"></i>
+							<p>管信分院</p><img src="folder/二维码.png">
+						</li>
+						<li><i class="fa fa-gr"></i>
+							<p>个人</p><img src="folder/二维码2.png">
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!--<script src="folder/jquery.min.js"></script>-->
+		<script src="folder/jquery.onepage-scroll.js"></script>
+		<script src="folder/app.js"></script>
+		<!-- <script src="assets/js/jquery.min.js"></script> -->
+		<!-- <script src="folder/jquery.reslider.js"></script> -->
+
+	</body>
+	<script>
+		//ie11底部定位偏移问题
+		var u = window.navigator.userAgent.toLocaleLowerCase(),
+			ie11 = /(trident)\/([\d.]+)/,
+			b = u.match(ie11);
+		if(b) {
+			$('.us__info').css('margin-right', '50%');
+		}
+	</script>
+	<!--<script>
+	$(function(){
+		$('.jquery-reslider').reSlider({
+			speed:1500,//设置轮播的高度
+			delay:5000,//设置轮播的延迟时间
+			imgCount:6,//设置轮播的图片数
+			dots:true,//设置轮播的序号点
+			autoPlay:true//设置轮播是否自动播放
+		});
+	});
+</script> -->
+	<script>
+		$(function() {
+			$(".rslides").responsiveSlides();
+		});
+	</script>
+
+</html>
