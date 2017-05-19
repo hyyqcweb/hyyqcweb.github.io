@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+        #div1{
+        	width: 100px;
+        	height: 100px;
+            border:1px solid #000; 
+        	}   
+        .box{
+        	background: red;
+        } 
+       /* .box_us{
+        	background: green;
+        }*/
+	</style>
+	 <script>
+	 function tored(){
+            var odiv=document.getElementById('div1');
+            odiv.className='box'
+	 }
+	 // function togreen(){
+  //           var odiv=document.getElementById('div1');
+  //           odiv.className='box_us'
+	 // }
+	 </script>
+</head>
+<body>
+	<!-- <input type="button" onmouseover="tored()" onmouseout="togreen()" value="变红"> --><!-- 鼠标移进和移出 -->
+	<input type="button" value="变红" onclick="tored()">
+	<div id="div1">
+		
+	</div>
+</body>
+</html>

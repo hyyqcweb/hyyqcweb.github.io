@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+         #div1{
+         	color:#eee;
+         	background: #f0f;
+         	width: 100px;
+         	height: 100px;
+         	display: none;
+         }
+	</style>
+	<script>
+         function toblock()
+         {
+         	document.getElementById('div1').style.display='block';
+         }
+         function tonone()
+         {
+         	document.getElementById('div1').style.display='none';
+         }
+	</script>
+</head>
+<body>
+	<input type="checkbox" onmouseover="toblock()"
+	 onmouseout="tonone()">
+	<div id="div1">
+		为了你的信息安全。。。
+	</div>
+</body>
+</html>

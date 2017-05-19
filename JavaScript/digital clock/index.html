@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+         body{
+         	/*color:#fff;*/
+         	/*background: #fff;*/
+         	/*background: #ccc;*/
+         	font-size: 100px;
+             }
+        .title{
+              text-align: center;
+              font-size: 50px;
+              color:#000;
+                 }
+	</style>
+	<script>
+	function toDou(n)
+	{
+		if(n<10)
+		{
+			return '0'+n;
+		}
+		else
+		{
+			return ''+n;
+		}
+	}
+       window.onload=function()
+       {
+       	var aImg=document.getElementsByTagName('img');
+       	// var str='012321';
+       // 	var oDate=new Date();
+        
+       //  var str=toDou(oDate.getHours())+toDou(oDate.getMinutes())+toDou(oDate.getSeconds());
+       //     //aleat(str);
+       // 	for(var i=0;i<aImg.length;i++)
+       // 	{
+       // 		aImg[i].src='img/'+str[i]+'.jpg';
+       // 	}
+       // }   
+       // setInterval(function(){
+       // 	var oDate=new Date();
+       //  var
+       //  var str=toDou(oDate.getHours())+toDou(oDate.getMinutes())+toDou(oDate.getSeconds());
+       //      //aleat(str);
+       //  	for(var i=0;i<aImg.length;i++)
+       // 	    {
+       //  		aImg[i].src='img/'+str[i]+'.jpg';
+       //  	}
+
+        	function tick()
+        	{
+        		var oDate=new Date();
+        		var str=toDou(oDate.getHours())+toDou(oDate.getMinutes())+toDou(oDate.getSeconds());
+        		for(var i=0;i<aImg.length;i++)
+        		{
+        			aImg[i].src='img/'+str.charAt(i)+'.jpg';
+        		}
+        	}
+        setInterval(tick,1000);
+        tick();
+       }
+	</script>
+</head>
+<body>
+  <div class="title">
+  <h1>狂拽炫酷吊炸天的时钟</h1>
+  </div>
+	<img src="img/0.jpg" alt="">
+	<img src="img/0.jpg" alt="">
+	-
+	<img src="img/0.jpg" alt="">
+	<img src="img/0.jpg" alt="">
+	-
+	<img src="img/0.jpg" alt="">
+	<img src="img/0.jpg" alt="">
+</body>
+</html>

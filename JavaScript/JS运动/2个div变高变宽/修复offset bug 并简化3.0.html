@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	div{
+		margin: 5px;
+		float: left;
+	}
+        #div1{
+        	width: 200px;
+        	height: 200px;
+        	background: red;
+        }
+        #div2{
+        	width: 200px;
+        	height: 200px;
+        	background: red;
+        }
+	</style>
+	<script>
+			window.onload=function()
+			{
+		       var oDiv1=document.getElementById('div1');
+		       // for(var i=0;i<oDiv1.length;i++)
+		       // {
+		       	  // oDiv1[i].timer=null;
+		       	  oDiv1.onmouseover=function()
+		       	  {
+		       	  	startMove(this,'width',400);
+		       	  }
+		       	  oDiv1.onmouseout=function()
+		       	  {
+                    startMove(this,'width',200);
+		       	  }
+
+		      var oDiv2=document.getElementById('div2');
+		       // for(var i=0;i<oDiv1.length;i++)
+		       // {
+		       	  // oDiv1[i].timer=null;
+		       	  oDiv2.onmouseover=function()
+		       	  {
+		       	  	startMove(this,'height',400);
+		       	  }
+		       	  oDiv2.onmouseout=function()
+		       	  {
+                    startMove(this,'height',200);
+		       	  }
+			};
+
+			function getStyle(obj,name)
+			{
+				if(obj.currentStyle)
+				{
+					return obj.currentStyle[name];
+				}
+				else
+				{
+					return getComputedStyle(obj,false)[name];
+				}
+			}
+
+           function startMove(obj,attr,iTarget)
+           {
+               clearInterval(obj.timer);
+               obj.timer=setInterval(function(){
+
+               	var cur=parseInt(getStyle(obj,attr));
+
+               	var speed=(iTarget-cur)/6;
+               	speed=speed>0?Math.ceil(speed):Math.floor(speed);
+               	if(cur==iTarget)
+               	{
+               		clearInterval(obj.timer);
+               	}
+               	else
+               	{
+               		obj.style[attr]=cur+speed+'px';
+               	}
+
+               },30)
+
+           };
+	</script>
+</head>
+<body>
+	<!-- <input id="btn1" type="button" value="变宽">
+	<input id="btn2" type="button" value="变高"> -->
+	<div id="div1">变宽</div>
+	<div id="div2">变高</div>
+</body>
+</html>

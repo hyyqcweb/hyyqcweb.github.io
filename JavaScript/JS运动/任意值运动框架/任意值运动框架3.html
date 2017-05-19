@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	div{
+			/*margin: 5px;
+			float: left;*/
+			font-size: :14px;
+			width: 200px;
+        	height: 200px;
+        	background: red;
+        	border:10px solid #000;
+        	filter:alpha(opacity:30);
+        	opacity: 0.3;
+
+	  }
+	</style>
+	<script>
+			window.onload=function()
+			{
+		       var oDiv1=document.getElementById('div1');
+		       // for(var i=0;i<oDiv1.length;i++)
+		       // {
+		       	  // oDiv1[i].timer=null;
+		       	  oDiv1.onmouseover=function()
+		       	  {
+		       	  	startMove(this,'opacity',100);
+		       	  }
+		       	  oDiv1.onmouseout=function()
+		       	  {
+                    startMove(this,'opacity',30);
+		       	  }
+
+		      
+			};
+
+			function getStyle(obj,name)
+			{
+				if(obj.currentStyle)
+				{
+					return obj.currentStyle[name];
+				}
+				else
+				{
+					return getComputedStyle(obj,false)[name];
+				}
+			}
+
+           function startMove(obj,attr,iTarget)
+           {
+               clearInterval(obj.timer);
+               obj.timer=setInterval(function(){
+
+               	// var cur=parseInt(getStyle(obj,attr));
+               	var cur=0;
+               	if(attr='opacity')
+               	{
+               		cur=Math.round(parseFloat(getStyle(obj,attr))*100);
+               	}
+               	else
+               	{
+               		cur=parseInt(getStyle(obj,attr));
+               	}
+
+               	var speed=(iTarget-cur)/6;
+               	speed=speed>0?Math.ceil(speed):Math.floor(speed);
+               	if(cur==iTarget)
+               	{
+               		clearInterval(obj.timer);
+               	}
+               	else
+               	{
+               		if(attr=='opacity')
+               		{
+                      obj.style.filter='alpha(opacity:'+(cur+speed)+')';
+                      obj.style.opacity=(cur+speed)/100;
+
+                      document.getElementById('txt1').value=obj.style.opacity;
+               		}
+               		else
+               		{
+
+               		}
+               		obj.style[attr]=cur+speed+'px';
+               	}
+
+               },30)
+
+           };
+	</script>
+</head>
+<body>
+	<!-- <input id="btn1" type="button" value="变宽">
+	<input id="btn2" type="button" value="变高"> -->
+	<input id="txt1" type="text">
+	<div id="div1"></div>
+</body>
+</html>

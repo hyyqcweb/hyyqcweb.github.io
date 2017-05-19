@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>年历</title>
+	<style>
+	.title{
+		font-size: 25px;
+		text-align: center;
+		padding-bottom: 10px;
+	}
+        #tab {
+        	width:480px;
+        	height: 500px;
+        	margin: 0 auto;
+        	border:2px solid #ccc;
+        }
+        #tab ul li{
+        	width: 50px;
+        	height: 100px;
+        	list-style-type: none;
+        	border:1px solid #000;
+        	margin: 0 5px;
+        	width: 23.8%;
+        	float: left;
+        	/*min-height: 10px;
+        	max-height: 300px;*/
+        }
+        #tab ul li.active{
+        	background: #ccc;
+        }
+        #tab ul li h2{
+        	text-align: center;
+
+        }
+        #tab ul li p{
+        	text-align: center;
+
+        }
+        #tab .text{
+        	float: left;
+        	margin-left: 50px;
+
+        }
+        #tab .text h2{
+        	font-size: 20px;
+        	text-align: center;
+        }
+        #tab .text p{
+        	font-size:15px;
+        	text-align: center;
+        }
+	</style>
+	<script>
+          window.onload=function()
+          {
+            var arr=[
+                 '你把房子盖在流沙上，却渴望一个永远安定的窝。',
+                 '经常凭灵性良心来克制自己，就是修养。........',
+                 '以锻炼为本，学会健康；以修进为本，学会求知。',
+                 '收敛自己的脾气，经常要保持沉默，因为冲动不好',
+                 '以进德为本，学会做人；以适应为本，学会生存。',
+                 '人心如叶片，一生一落，一落一生，光阴流转。。',
+                 '人心是容器，时常刷新，时常清空，面朝阳光。。',
+                 '任何事情，你想做就有方法，不想做就有借口....',
+                 '你有选择的自由，也有承担后果的义务..........',
+                 '卑微的讨好别人，只会换来别人的无视..........',
+                 '人，不怕渺小，只怕卑微，生活都是公平的......',
+                 '希望就是希望，无论它的可能有多少，只要有可能'
+            ];
+
+          	var odiv=document.getElementById('tab');
+          	var ali=odiv.getElementsByTagName('li');
+          	var otext=odiv.getElementsByTagName('div')[0];
+
+          	for(var i=0; i<ali.length; i++)
+          	{
+          		ali[i].index=i;
+          		ali[i].onmouseover=function()
+          		{
+          			for(var i=0; i<ali.length; i++)
+          		  {
+          			ali[i].className='';
+          		  }
+          		    this.className='active';
+
+          		    otext.innerHTML='<h2>'+(this.index+1)+'月鸡汤</h2><p>'+arr[this.index]+'</p>'
+          	    }
+          	};
+
+          };
+	</script>
+</head>
+<body>
+	<div class="title">年历</div>
+	<div id="tab">
+		<ul>
+			<li class="active">
+				<h2>1</h2>
+				<p>JAN</p>
+			</li>
+			<li>
+				<h2>2</h2>
+				<p>FER</p>
+			</li>
+			<li>
+				<h2>3</h2>
+				<p>MAR</p>
+			</li>
+			<li>
+				<h2>4</h2>
+				<p>APR</p>
+			</li>
+			<li>
+				<h2>5</h2>
+				<p>MAY</p>
+			</li>
+			<li>
+				<h2>6</h2>
+				<p>JUN</p>
+			</li>
+			<li>
+				<h2>7</h2>
+				<p>JUL</p>
+			</li>
+			<li>
+				<h2>8</h2>
+				<p>AUG</p>
+			</li>
+			<li>
+				<h2>9</h2>
+				<p>SEP</p>
+			</li>
+			<li>
+				<h2>10</h2>
+				<p>OCT</p>
+			</li>
+			<li>
+				<h2>11</h2>
+				<p>NOV</p>
+			</li>
+			<li>
+				<h2>12</h2>
+				<p>DEC</p>
+			</li>
+		</ul>
+		<div class="text">
+			<h2>  1月活动 </h2>
+			<p>快过年了，大家可以商量着去哪玩吧</p>
+		</div>
+	</div>
+</body>
+</html>

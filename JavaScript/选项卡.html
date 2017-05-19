@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+      #div1 .active{
+             background: yellow;
+      }
+      #div1 div{
+      	width: 200px;
+      	height: 200px;
+      	background: #ccc;
+      	border:1px solid #888;
+      	display: none;
+      }
+      #div1 div.style{
+      	display: block;
+      }
+	</style>
+	<script>
+        window.onload=function(){
+        	var odiv=document.getElementById('div1');
+        	var obtn=odiv.getElementsByTagName('input');
+        	var adiv=odiv.getElementsByTagName('div');
+
+        	for(var i=0;i<obtn.length;i++)
+        	{
+        		obtn[i].index=i;
+        		obtn[i].onclick=function()
+        		{
+        			for(var i=0; i<obtn.length;i++){
+        				obtn[i].className='';
+        				adiv[i].style.display='none';
+        			}
+        			this.className='active';
+        			adiv[this.index].style.display='block';
+        		};
+        	}
+        };
+	</script>
+</head>
+<body>
+	<div id="div1">
+		<input  class="active" type="button" value="教育">
+		<input type="button" value="培训">
+		<input type="button" value="招生">
+		<input type="button" value="出国">
+		<div class="style">1111111</div>
+		<div>2222222</div>
+		<div>3333333</div>
+		<div>4444444</div>
+	</div>
+</body>
+</html>
