@@ -7,5 +7,7 @@
 <h3>有效果版impress.js<a href="https://hyyqcweb.github.io/inconceivable_fonts/index.html#/bored">demo</a></h3>
 <h3>软件1.0<a href="https://hyyqcweb.github.io/soft1.0/index.html">demo</a></h3>
 <h3>软件2.0<a href="https://hyyqcweb.github.io/soft2.0/index.html">demo</a></h3>
+<h3>H5游戏--是男人就下100层<a href="https://hyyqcweb.github.io//Man/index.html">demo</a></h3>
+
 
 
