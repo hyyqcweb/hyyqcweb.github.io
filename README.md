@@ -22,4 +22,4 @@
 
 <h3>五子棋布局人机对战<a href="https://hyyqcweb.github.io/gobang/AI/index.html">demo</a></h3>
 
-
+<h3>50行实现粒子喷射<a href="https://hyyqcweb.github.io/CanvasAnimation/index.html">demo</a></h3>
