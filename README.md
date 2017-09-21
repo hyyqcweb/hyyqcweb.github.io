@@ -1,5 +1,5 @@
 
-# 平时做的一些小粒子
+# 平时做的一些小东西
 
   + 搜狗静态页面<a href="https://hyyqcweb.github.io/sougou.htm">demo</a>
 
