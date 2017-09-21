@@ -1,0 +1,18 @@
+#overflow{
+	width: 450px;
+	height: 70px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+
+}
+#overflow p{
+	text-align: center;
+	font: 20px/70px "微软雅黑";
+	font-weight: bold;
+	color:#000;
+}
+canvas{
+	margin: 50px auto;
+	display: block;
+	box-shadow: -2px -2px 2px #E9E9E9, 5px 5px 5px #cccccc;
+}
