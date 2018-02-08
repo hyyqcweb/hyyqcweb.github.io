@@ -1,0 +1,74 @@
+@charset 'utf-8';
+#team{
+	width: 100%;
+	height: 100%;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background: url('../images/team_bg.jpg') no-repeat;
+}
+.navigation li.active{
+	background: #d7d7d7;
+}
+.team-item{
+	margin-top: 70px;
+	width: 100%;
+
+}
+.team-item .team-t{
+	width: 920px;
+	margin: 0 auto;
+	height: auto;
+	overflow: hidden;
+}
+.team-item .team-b{
+	width: 1160px;
+	margin: 0 auto;
+	height: auto;
+	overflow: hidden;
+}
+.team-item a{
+	float: left;
+	display: inline-block;
+	margin-right: 40px;
+	margin-bottom: 40px;
+}
+.team-item a:last-child{
+	margin-right: 0;
+}
+.team-item a img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+.lb-dataContainer{
+	position: absolute;
+	left: 65%;
+	top: 0;
+}
+.lb-dataContainer .lb-caption{
+	font-size: 25px;
+	font-weight: normal;
+	color: #76612c;
+}
+.lb-dataContainer .lb-caption h3,.lb-dataContainer .lb-caption h4{
+	color: #fff;
+	font-size: 16px;
+	font-weight: normal;
+}
+.lb-dataContainer .lb-caption h4{
+	margin-bottom: 10px;
+}
+.lb-dataContainer .lb-caption p{
+	color: #fff;
+	font-size: 14px;
+	line-height: 20px;
+}
+.lb-dataContainer .lb-caption i{
+	display: block;
+	margin-top: 10px;
+}
+.lb-dataContainer .lb-caption dt{
+	color: #fff;
+	font-size: 12px;
+	line-height: 22px;
+}
