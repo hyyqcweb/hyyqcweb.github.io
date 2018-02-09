@@ -68,9 +68,13 @@
 	line-height: 25px;
 	color: #736442;
 	text-align: center;
+	font-size: 15px;
 	display: inline-block;
 	transform:skew(33deg);
 	-webkit-transform:skew(33deg);
+}
+.nav-list-item li a span{
+	font-size: 14px;
 }
 /* fr */
 .box{

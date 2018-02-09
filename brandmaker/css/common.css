@@ -50,3 +50,6 @@
     margin-left: 13%;
     font-size: 15px;
 }
+.navigation li a span{
+	font-size: 14px;
+}

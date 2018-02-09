@@ -10,18 +10,18 @@
 	background: #d7d7d7;
 }
 .team-item{
-	margin-top: 70px;
+	margin-top: 200px;
 	width: 100%;
 
 }
 .team-item .team-t{
-	width: 920px;
+	width: 760px;
 	margin: 0 auto;
 	height: auto;
 	overflow: hidden;
 }
 .team-item .team-b{
-	width: 1160px;
+	width: 760px;
 	margin: 0 auto;
 	height: auto;
 	overflow: hidden;
@@ -30,14 +30,14 @@
 	float: left;
 	display: inline-block;
 	margin-right: 40px;
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 }
 .team-item a:last-child{
 	margin-right: 0;
 }
 .team-item a img{
-	width: 200px;
-	height: 200px;
+	width: 100px;
+	height: 100px;
 	border-radius: 50%;
 }
 .lb-dataContainer{
